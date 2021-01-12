@@ -3,7 +3,7 @@ from .CodeList import CodeList
 
 
 # 类
-class ClsDef(NoReturnFig):
+class DefCls(NoReturnFig):
     class_name: str
     father_name: str
     # 接口
