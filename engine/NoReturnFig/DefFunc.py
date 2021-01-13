@@ -8,5 +8,7 @@ class DefFunc(NoReturnFig):
     required_parameters: list #<Var>
     # 可选参数
     optional_parameters: list #<VarSet>
-    # 
+    # 返回类型
     return_type: str
+    # 代码块
+    codes: CodeList

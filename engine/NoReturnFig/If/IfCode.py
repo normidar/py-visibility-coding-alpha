@@ -1,0 +1,8 @@
+from ..NoReturnFig import NoReturnFig
+from ..CodeList import CodeList
+from engine.ReturnFig.ReturnFig import ReturnFig
+
+
+class IfCode(NoReturnFig):
+    condition: ReturnFig
+    codes: CodeList
