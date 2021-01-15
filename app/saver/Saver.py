@@ -1,3 +1,4 @@
+import pickle as pk
 from app.engine.NoReturnFig.Project import Project
 
 
@@ -17,6 +18,19 @@ class Saver(object):
     
     @staticmethod
     def run():
-        Saver.from_file_to_object("")
+        Pickler.to_file(Project(a="abc"),"output.bt")
+        obj = Pickler.from_file("output.bt")
+        print(obj.a)
+
+class Pickler(object):
+    @staticmethod
+    def to_file(obj,path: str):
+        with open(path,"wb") as f:
+            pk.dump(obj,f)
+
+    @staticmethod
+    def from_file(path:str):
+        with open(path,"rb") as f:
+            return pk.load(f)
 
 Saver.run()
