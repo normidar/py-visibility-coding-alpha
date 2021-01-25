@@ -1,0 +1,1 @@
+pyqtdeploy~=3.1.0
