@@ -1,5 +1,6 @@
+from ..ReturnFig.ReturnFig import ReturnFig
 from .NoReturnFig import NoReturnFig
-from engine.ReturnFig.ReturnFig import ReturnFig
+
 
 class SetVal(NoReturnFig):
     var_name:str
